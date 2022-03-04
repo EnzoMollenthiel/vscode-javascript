@@ -70,20 +70,35 @@
     "body": "constructor(${1:params}) {\n\t${0}\n}",
     "description": "Add default constructor in a class in ES6 syntax"
   },
+  "privateStatic": {
+    "prefix": "ps",
+    "body": "private static",
+    "description": "Creates private static member"
+  },
+  "privateReadonly": {
+    "prefix": "pr",
+    "body": "private readonly",
+    "description": "Creates private readonly member"
+  },
+  "privateStaticReadonly": {
+    "prefix": "psr",
+    "body": "private static readonly",
+    "description": "Creates private static readonly member"
+  },
   "method": {
     "prefix": "met",
-    "body": "${1:methodName}(${2:params}) {\n\t${0}\n}",
-    "description": "Creates a method inside a class in ES6 syntax"
+    "body": "${1:methodName}(${2:params}): ${3:type} {\n\t${0}\n}",
+    "description": "Creates a method inside a class"
   },
   "propertyGet": {
     "prefix": "pge",
-    "body": "get ${1:propertyName}() {\n\treturn this.${0};\n}",
-    "description": "Creates a getter property inside a class in ES6 syntax"
+    "body": "get ${1:propertyName}(): ${3:type} {\n\treturn this.${0};\n}",
+    "description": "Creates a getter property inside a class"
   },
   "propertyset": {
     "prefix": "pse",
-    "body": "set ${1:propertyName}(${2:value}) {\n\t${0};\n}",
-    "description": "Creates a setter property inside a class in ES6 syntax"
+    "body": "set ${1:propertyName}(${2:value}): ${3:type} {\n\t${0};\n}",
+    "description": "Creates a setter property inside a class"
   },
 
   "forEach": {
