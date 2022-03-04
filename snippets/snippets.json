@@ -71,12 +71,12 @@
     "description": "Add default constructor in a class in ES6 syntax"
   },
   "privateStatic": {
-    "prefix": "ps",
+    "prefix": "pvs",
     "body": "private static",
     "description": "Creates private static member"
   },
   "privateReadonly": {
-    "prefix": "pr",
+    "prefix": "pvr",
     "body": "private readonly",
     "description": "Creates private readonly member"
   },

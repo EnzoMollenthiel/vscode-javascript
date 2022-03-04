@@ -55,6 +55,9 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | Trigger  | Content |
 | -------: | ------- |
 | `con→`   | adds default constructor in the class `constructor() {}`|
+| `pvs→`   | creates a private static member inside a class `private static` |
+| `pvr→`   | creates a private readonly member inside a class `private readonly` |
+| `psr→`   | creates a private static readonly member inside a class `private static readonly` |
 | `met→`   | creates a method inside a class `add() {}` |
 | `pge→`   | creates a getter property `get propertyName() {return value;}` |
 | `pse→`   | creates a setter property `set propertyName(value) {}` |
