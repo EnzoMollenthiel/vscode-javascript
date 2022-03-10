@@ -41,17 +41,17 @@
   },
   "exportNamedVariable": {
     "prefix": "env",
-    "body": "export const ${1:exportVariable} = ${2:localVariable};\n",
+    "body": "export const ${1:exportVariable}: ${2:type} = ${3:localVariable};\n",
     "description": "Export named variable in ES6 syntax"
   },
   "exportNamedFunction": {
     "prefix": "enf",
-    "body": "export const ${1:functionName} = (${2:params}) => {\n\t$0\n};\n",
+    "body": "export const ${1:functionName} = (${2:params}): ${3:type} => {\n\t$0\n};\n",
     "description": "Export named function in ES6 syntax"
   },
   "exportDefaultFunction": {
     "prefix": "edf",
-    "body": "export default function ${1:${TM_FILENAME_BASE}}(${2:params}) {\n\t$0\n};\n",
+    "body": "export default function ${1:${TM_FILENAME_BASE}}(${2:params}): ${3:type} {\n\t$0\n};\n",
     "description": "Export default function in ES6 syntax"
   },
   "exportClass": {
@@ -70,20 +70,35 @@
     "body": "constructor(${1:params}) {\n\t${0}\n}",
     "description": "Add default constructor in a class in ES6 syntax"
   },
+  "privateStatic": {
+    "prefix": "pvs",
+    "body": "private static",
+    "description": "Creates private static member"
+  },
+  "privateReadonly": {
+    "prefix": "pvr",
+    "body": "private readonly",
+    "description": "Creates private readonly member"
+  },
+  "privateStaticReadonly": {
+    "prefix": "psr",
+    "body": "private static readonly",
+    "description": "Creates private static readonly member"
+  },
   "method": {
     "prefix": "met",
-    "body": "${1:methodName}(${2:params}) {\n\t${0}\n}",
-    "description": "Creates a method inside a class in ES6 syntax"
+    "body": "${1:methodName}(${2:params}): ${3:type} {\n\t${0}\n}",
+    "description": "Creates a method inside a class"
   },
   "propertyGet": {
     "prefix": "pge",
-    "body": "get ${1:propertyName}() {\n\treturn this.${0};\n}",
-    "description": "Creates a getter property inside a class in ES6 syntax"
+    "body": "get ${1:propertyName}(): ${2:type} {\n\treturn this.${0};\n}",
+    "description": "Creates a getter property inside a class"
   },
   "propertyset": {
     "prefix": "pse",
-    "body": "set ${1:propertyName}(${2:value}) {\n\t${0};\n}",
-    "description": "Creates a setter property inside a class in ES6 syntax"
+    "body": "set ${1:propertyName}(${2:value}): ${3:type} {\n\t${0};\n}",
+    "description": "Creates a setter property inside a class"
   },
 
   "forEach": {
@@ -103,12 +118,12 @@
   },
   "anonymousFunction": {
     "prefix": "anfn",
-    "body": "(${1:params}) => {\n\t${2}\n}",
+    "body": "(${1:params}): ${2:type} => {\n\t${0}\n}",
     "description": "Creates an anonymous function in ES6 syntax"
   },
   "namedFunction": {
     "prefix": "nfn",
-    "body": "const ${1:name} = (${2:params}) => {\n\t${3}\n}",
+    "body": "const ${1:name} = (${2:params}): ${3:type} => {\n\t${0}\n}",
     "description": "Creates a named function in ES6 syntax"
   },
   "destructingObject": {
@@ -123,7 +138,7 @@
   },
   "setInterval": {
     "prefix": "sti",
-    "body": "setInterval(() => {\n\t${2}\n}, ${0:intervalInms});",
+    "body": "setInterval(() => {\n\t${2}\n}, ${1:intervalInms});",
     "description": "Executes the given function at specified intervals in ES6 syntax"
   },
   "setTimeOut": {

@@ -1,14 +1,14 @@
 {
-  "name": "JavaScriptSnippets",
-  "description": "Code snippets for JavaScript in ES6 syntax",
+  "name": "TypeScriptSnippets",
+  "description": "Code snippets for Typescript",
   "version": "1.8.0",
-  "displayName": "JavaScript (ES6) code snippets",
-  "publisher": "xabikos",
-  "icon": "images/javascript.png",
+  "displayName": "Typescript code snippets",
+  "publisher": "EnzoMollenthiel",
+  "icon": "images/typescript.png",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xabikos/vscode-javascript"
+    "url": "https://github.com/EnzoMollenthiel/vscode-javascript"
   },
   "engines": {
     "vscode": "0.10.x"
