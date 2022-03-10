@@ -8,7 +8,7 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/EnzoMollenthiel/vscode-javascript"
+    "url": "https://github.com/EnzoMollenthiel/vscode-typescript"
   },
   "engines": {
     "vscode": "0.10.x"
