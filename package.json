@@ -1,7 +1,7 @@
 {
   "name": "TypeScriptSnippets",
   "description": "Code snippets for Typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Typescript code snippets",
   "publisher": "EnzoMollenthiel",
   "icon": "images/typescript.png",
